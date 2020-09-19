@@ -1,0 +1,269 @@
+/* Basic */
+
+@font-face {
+	font-family: "Raleway";
+	font-weight: 300;
+	src:url(../font/Raleway/Raleway-Light.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "Raleway";
+	font-weight: 500;
+	src:url(../font/Raleway/Raleway-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Reenie Beanie';
+    font-weight: 400;
+    src: url('../font/Reenie Beanie/ReenieBeanie.woff2') format('woff2'), url('../font/Reenie Beanie/ReenieBeanie.woff') format('woff');
+}
+
+* {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+html {
+	color: #222;
+	font-family: 'Raleway', sans-serif;
+	font-size: calc(14px + 0.5vw);
+	font-weight: 300;
+	line-height: 1.6em;
+	font-variant-numeric: lining-nums;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header, section, footer {
+	position: relative;
+	border-bottom: 1vh solid #2a94eb;
+	padding-top: 1px;
+}
+
+article, aside {
+	width: 100vw;
+	margin: 3rem auto;
+	padding: 0 5vw;
+}
+
+/* Header & Footer */
+
+header {
+	height: 101vh;
+	background-size: contain !important;
+}
+
+header div {
+	position: fixed;
+	top: calc((100vh - (min(100vh, 100vw / 1920 * 1284) * 0.4)) / 2);
+	right: calc((100vw - (min(100vw, 100vh / 1284 * 1920) * 0.9)) / 2);
+	text-align: right;
+	color: #2a94eb;
+	font-size: calc(min(100vw, 100vh / 1284 * 1920) / 40);
+	font-weight: 400;
+	line-height: 3.5em;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+}
+
+footer {
+	border-bottom-width: 0;
+}
+
+footer article {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 1rem 0 0 0;
+}
+
+footer article p {
+	margin: 0 5vw 1rem 5vw;
+	font-size: calc(10px + 0.5vw);
+	line-height: 1.8em;
+	font-weight: 500;
+}
+
+footer article p a {
+	color: inherit !important;
+}
+
+footer article p a.social-media {
+	margin-left: 1rem;
+}
+
+footer article p a.social-media:first-child {
+	margin-left: 0;
+}
+
+footer article p a.social-media img {
+	height: 2.4em;
+}
+
+/* Layouts */
+
+section.dark, footer.dark {
+	background-color: #222;
+	color: #ccc;
+}
+
+header.background-image, section.background-image {
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat; 
+}
+
+section.background-image article {
+	background-color: rgba(255, 255, 255, .9);
+	padding-top: 1px;
+	padding-bottom: 1rem;
+	width: 90vw;
+}
+
+section.above-images aside {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: calc(3rem - 2.5vw);
+}
+
+section.above-images aside img {
+	margin: 0 1.25vw 2.5vw 1.25vw;
+	max-height: 200px;
+	width: auto;
+	max-width: 90vw;
+}
+
+/* Typography */
+
+h1 {
+	margin: 4rem 0 2rem 0;
+	font-size: calc(24px + 3vw);
+	font-weight: 300;
+	line-height: 1.6em;
+}
+
+h2 {
+	margin: 3rem 0 2rem 0;
+	font-size: calc(18px + 1.5vw);
+	font-weight: 300;
+	line-height: 1.6em;
+}
+
+h3 {
+	font-size: calc(14px + 0.5vw);
+	font-weight: 500;
+	line-height: 1.6em;
+}
+
+p, blockquote, ul, ol {
+	margin: 2rem 0;
+	font-size: calc(14px + 0.5vw);
+	font-weight: 300;
+	line-height: 1.6em;
+}
+
+blockquote {
+	position: relative;
+	padding-left: calc(1em + 3vw);
+	padding-bottom: 1px;
+}
+
+blockquote p {
+	position: relative;
+}
+
+blockquote p::before {
+	content: '»';
+	position: absolute;
+	left: -1em;
+}
+
+blockquote p::after {
+	content: '«';
+	position: relative;
+	left: 0.5em;
+}
+
+cite {
+	display: block;
+	bottom: 0;
+	position: absolute;
+	font-size: calc(10px + 0.5vw);
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+a:link, a:visited, a:focus, a:hover, a:active {
+	color: #2a94eb;
+	text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+
+	html {
+		font-size: calc(14px + (14.4px * 0.5));
+	}
+
+	article, aside {
+		width: calc(14.4px * 100);
+		padding: 0 calc(14.4px * 5);
+	}
+	
+	footer article p {
+		margin: 0 calc(14.4px * 5) 1rem calc(14.4px * 5);
+		font-size: calc(10px + (14.4px * 0.5));
+	}
+
+	section.background-image article {
+		width: calc(14.4px * 90);
+	}
+	
+	section.above-images aside {
+		margin-bottom: calc(3rem - (14.4px * 2.5));
+	}
+
+	section.above-images aside img {
+		margin: 0 calc(14.4px * 1.25) calc(14.4px * 2.5) calc(14.4px * 1.25);
+	}
+	
+	h1 {
+		font-size: calc(24px + (14.4px * 3));
+	}
+	
+	h2 {
+		font-size: calc(18px + (14.4px * 1.5));
+	}
+
+	h3 {
+		font-size: calc(14px + (14.4px * 0.5));
+	}
+
+	p, blockquote, ul, ol {
+		font-size: calc(14px + (14.4px * 0.5));
+	}
+
+	blockquote {
+		padding-left: calc(1em + (14.4px * 3));
+	}
+
+	cite {
+		font-size: calc(10px + (14.4px * 0.5));
+	}
+
+}
+
+@media (min-height: 1440px) {
+
+	header, section, footer {
+		border-bottom-width: calc(14.4px * 1);
+	}
+
+}
