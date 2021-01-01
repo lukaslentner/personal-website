@@ -28,7 +28,7 @@ html {
 	font-family: 'Raleway', sans-serif;
 	font-size: calc(14px + 0.5vw);
 	font-weight: 300;
-	line-height: 1.6em;
+	line-height: 1.8em;
 	font-variant-numeric: lining-nums;
 }
 
@@ -43,9 +43,9 @@ header, section, footer {
 	padding-top: 1px;
 }
 
-article, aside {
+article {
 	width: 100vw;
-	margin: 3rem auto;
+	margin: 6rem auto;
 	padding: 0 5vw;
 }
 
@@ -54,19 +54,6 @@ article, aside {
 header {
 	height: 101vh;
 	background-size: contain !important;
-}
-
-header div {
-	position: fixed;
-	top: calc((100vh - (min(100vh, 100vw / 1920 * 1284) * 0.4)) / 2);
-	right: calc((100vw - (min(100vw, 100vh / 1284 * 1920) * 0.9)) / 2);
-	text-align: right;
-	color: #2a94eb;
-	font-size: calc(min(100vw, 100vh / 1284 * 1920) / 40);
-	font-weight: 400;
-	line-height: 3.5em;
-	letter-spacing: 0.5em;
-	text-transform: uppercase;
 }
 
 footer {
@@ -122,22 +109,8 @@ header.background-image, section.background-image {
 section.background-image article {
 	background-color: rgba(255, 255, 255, .9);
 	padding-top: 1px;
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
 	width: 90vw;
-}
-
-section.above-images aside {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: calc(3rem - 2.5vw);
-}
-
-section.above-images aside img {
-	margin: 0 1.25vw 2.5vw 1.25vw;
-	max-height: 200px;
-	width: auto;
-	max-width: 90vw;
 }
 
 /* Typography */
@@ -162,48 +135,29 @@ h3 {
 	line-height: 1.6em;
 }
 
-p, blockquote, ul, ol {
+p {
 	margin: 2rem 0;
 	font-size: calc(14px + 0.5vw);
 	font-weight: 300;
-	line-height: 1.6em;
-}
-
-blockquote {
-	position: relative;
-	padding-left: calc(1em + 3vw);
-	padding-bottom: 1px;
-}
-
-blockquote p {
-	position: relative;
-}
-
-blockquote p::before {
-	content: '»';
-	position: absolute;
-	left: -1em;
-}
-
-blockquote p::after {
-	content: '«';
-	position: relative;
-	left: 0.5em;
-}
-
-cite {
-	display: block;
-	bottom: 0;
-	position: absolute;
-	font-size: calc(10px + 0.5vw);
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
+	line-height: 1.8em;
 }
 
 a:link, a:visited, a:focus, a:hover, a:active {
 	color: #2a94eb;
 	text-decoration: none;
+}
+
+a.button:link, a.button:visited, a.button:focus, a.button:hover, a.button:active {
+	display: inline-block;
+	color: #222;
+	border: 1px solid #222;
+	padding: 1em 2em;
+	margin-top: 1rem;
+}
+
+section.dark a.button:link, section.dark a.button:visited, section.dark a.button:focus, section.dark a.button:hover, section.dark a.button:active {
+	color: #ccc;
+	border: 1px solid #ccc;
 }
 
 @media (min-width: 1440px) {
@@ -212,7 +166,7 @@ a:link, a:visited, a:focus, a:hover, a:active {
 		font-size: calc(14px + (14.4px * 0.5));
 	}
 
-	article, aside {
+	article {
 		width: calc(14.4px * 100);
 		padding: 0 calc(14.4px * 5);
 	}
@@ -224,14 +178,6 @@ a:link, a:visited, a:focus, a:hover, a:active {
 
 	section.background-image article {
 		width: calc(14.4px * 90);
-	}
-	
-	section.above-images aside {
-		margin-bottom: calc(3rem - (14.4px * 2.5));
-	}
-
-	section.above-images aside img {
-		margin: 0 calc(14.4px * 1.25) calc(14.4px * 2.5) calc(14.4px * 1.25);
 	}
 	
 	h1 {
@@ -246,16 +192,8 @@ a:link, a:visited, a:focus, a:hover, a:active {
 		font-size: calc(14px + (14.4px * 0.5));
 	}
 
-	p, blockquote, ul, ol {
+	p {
 		font-size: calc(14px + (14.4px * 0.5));
-	}
-
-	blockquote {
-		padding-left: calc(1em + (14.4px * 3));
-	}
-
-	cite {
-		font-size: calc(10px + (14.4px * 0.5));
 	}
 
 }
