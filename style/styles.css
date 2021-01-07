@@ -61,7 +61,7 @@ article {
 
 header {
 	height: 101vh;
-	background-size: contain;
+	background-size: contain !important;
 }
 
 footer {
