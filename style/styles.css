@@ -23,6 +23,14 @@
 	user-select: none;
 }
 
+@supports (-webkit-touch-callout: none) {
+	
+	* {
+		background-attachment: scroll !important;
+	}
+	
+}
+
 html {
 	color: #222;
 	font-family: 'Raleway', sans-serif;
@@ -53,7 +61,7 @@ article {
 
 header {
 	height: 101vh;
-	background-size: contain !important;
+	background-size: contain;
 }
 
 footer {
@@ -94,19 +102,19 @@ footer article p a.social-media img {
 
 /* Layouts */
 
-section.dark, footer.dark {
+.dark {
 	background-color: #222;
 	color: #ccc;
 }
 
-header.background-image, section.background-image {
+.background-image {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat; 
 }
 
-section.background-image article {
+.background-image article {
 	background-color: rgba(255, 255, 255, .9);
 	padding-top: 1px;
 	padding-bottom: 2rem;
@@ -155,7 +163,7 @@ a.button:link, a.button:visited, a.button:focus, a.button:hover, a.button:active
 	margin-top: 1rem;
 }
 
-section.dark a.button:link, section.dark a.button:visited, section.dark a.button:focus, section.dark a.button:hover, section.dark a.button:active {
+.dark a.button:link, .dark a.button:visited, .dark a.button:focus, .dark a.button:hover, .dark a.button:active {
 	color: #ccc;
 	border: 1px solid #ccc;
 }
