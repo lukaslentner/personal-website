@@ -12,12 +12,6 @@
 	src: url(../font/Raleway/Raleway-Medium.otf) format("opentype");
 }
 
-@font-face {
-	font-family: 'Reenie Beanie';
-	font-weight: 400;
-	src: url('../font/Reenie Beanie/ReenieBeanie.woff2') format('woff2'), url('../font/Reenie Beanie/ReenieBeanie.woff') format('woff');
-}
-
 * {
 	box-sizing: border-box;
 	user-select: none;
@@ -148,6 +142,7 @@ p {
 	font-size: calc(14px + (0.005 * min(100vw, 1440px)));
 	font-weight: 300;
 	line-height: 1.8em;
+	hyphens: auto;
 }
 
 a:link, a:visited, a:focus, a:hover, a:active {
