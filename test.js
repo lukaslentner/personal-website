@@ -1,3 +1,1 @@
-const r = function() {
-  console.log('www');
-};
+self.ZZZ = 3;
