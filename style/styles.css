@@ -68,11 +68,11 @@ footer article {
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-	padding: 1rem 0 0 0;
+	padding: 2rem 0 0 0;
 }
 
 footer article p {
-	margin: 0 calc(0px + (0.05 * min(100vw, 1440px))) 1rem calc(0px + (0.05 * min(100vw, 1440px)));
+	margin: 0 calc(0px + (0.05 * min(100vw, 1440px))) 2rem calc(0px + (0.05 * min(100vw, 1440px)));
 	font-size: calc(10px + (0.005 * min(100vw, 1440px)));
 	line-height: 1.8em;
 	font-weight: 500;
