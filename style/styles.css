@@ -169,6 +169,10 @@ a.button:link, a.button:visited, a.button:focus, a.button:hover, a.button:active
 	background-image: url(../image/head_720.jpg);
 }
 
+.image-engineering {
+	background-image: url(../image/engineering_720.jpg);
+}
+
 .image-uni-kult {
 	background-image: url(../image/uni-kult_720.jpg);
 }
@@ -177,6 +181,10 @@ a.button:link, a.button:visited, a.button:focus, a.button:hover, a.button:active
 
 	.image-head {
 		background-image: url(../image/head_1440.jpg);
+	}
+
+	.image-engineering {
+		background-image: url(../image/engineering_1440.jpg);
 	}
 
 	.image-uni-kult {
@@ -189,6 +197,10 @@ a.button:link, a.button:visited, a.button:focus, a.button:hover, a.button:active
 
 	.image-head {
 		background-image: url(../image/head_2560.jpg);
+	}
+
+	.image-engineering {
+		background-image: url(../image/engineering_2560.jpg);
 	}
 
 	.image-uni-kult {
